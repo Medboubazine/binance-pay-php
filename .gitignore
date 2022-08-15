@@ -1,0 +1,4 @@
+/vendor/*
+composer.lock
+redirect.php
+webhook.php

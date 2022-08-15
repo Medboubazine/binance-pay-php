@@ -1,0 +1,32 @@
+{
+    "name": "medboubazine/binance-pay",
+    "type": "library",
+    "description": "Binance Pay - PHP",
+    "keywords": [
+        "php",
+        "binance",
+        "binancepay",
+        "merchant.binance.com"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Boubazine Mohammed",
+            "email": "mohamedtorino161@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Medboubazine\\BinancePay\\": "src/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.4"
+    },
+    "require": {
+        "php":">=7.2.5",
+        "guzzlehttp/guzzle": "^7.4",
+        "laravel/helpers": "^1.5"
+    }
+}
