@@ -1,3 +1,7 @@
+# Install
+```bash
+composer require medboubazine/binance-pay
+```
 # How To Use
 
 - Redirect
