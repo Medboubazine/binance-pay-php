@@ -11,7 +11,7 @@ class Credentials
      *
      * @var array
      */
-    protected array $attributes = [];
+    protected $attributes = [];
     /**
      * __call
      *

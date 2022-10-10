@@ -2,14 +2,8 @@
 
 namespace Medboubazine\BinancePay\Core;
 
-use Medboubazine\BinancePay\Core\Helpers\HashSignature;
-use Medboubazine\BinancePay\Core\Resources\Buyer;
 use Medboubazine\BinancePay\Core\Resources\Credentials;
-use Medboubazine\BinancePay\Core\Resources\Order;
-use Medboubazine\BinancePay\Core\Resources\Product;
-use Medboubazine\BinancePay\Core\Resources\Urls;
 use Medboubazine\BinancePay\Core\Traits\GuzzleHttpRequest;
-use Illuminate\Support\Str;
 use Medboubazine\BinancePay\Core\Helpers\DefaultHeaders;
 use Medboubazine\BinancePay\Core\PayPayment;
 
@@ -28,6 +22,9 @@ class QueryForPayment
      */
     public static function get(Credentials $credentials, $id)
     {
+        if (!is_string($id)) {
+            return null;
+        }
         $body = self::getBodyAsArray($id);
         $body_json = json_encode($body);
 

@@ -11,13 +11,13 @@ class ParsePayWebhook
      *
      * @var PayPayment|null
      */
-    protected static ?string $pay_id;
+    protected static $pay_id = null;
     /**
      * Check
      *
      * @var boolean|null
      */
-    protected static ?bool $check;
+    protected static $check = null;
     /**
      * check
      *
