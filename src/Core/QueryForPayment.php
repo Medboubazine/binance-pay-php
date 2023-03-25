@@ -45,6 +45,7 @@ class QueryForPayment
             $timestamp = $data['createTime'] / 1000;
             return (new PayPayment())
                 ->setId($data['merchantTradeNo'])
+                ->setPrepayId($data['prepayId'])
                 ->setStatus($data['status'])
                 ->setCurrency($data['currency'])
                 ->setAmount($data['orderAmount'])
