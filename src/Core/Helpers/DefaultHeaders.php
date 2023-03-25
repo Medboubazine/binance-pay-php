@@ -13,7 +13,7 @@ class DefaultHeaders
         //
         $nonce = bin2hex(openssl_random_pseudo_bytes(16));
         //
-        $signature = Str::upper(HashSignature::make($timestamp . "\n" . $nonce . "\n" . $body . "\n", $credentials->getApiSecret()));
+        $signature = Str::upper(HashSignature::make($timestamp . "\n" . $nonce . "\n" . $body . "\n", $credentials->getApiSecret() ?? ""));
 
         return [
             'BinancePay-Certificate-SN' => $credentials->getApiKey(),
