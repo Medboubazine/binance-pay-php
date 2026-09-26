@@ -22,11 +22,11 @@
         }
     },
     "require-dev": {
-        "symfony/var-dumper": "^5.4"
+        "symfony/var-dumper": "*"
     },
     "require": {
         "php":">=7.2.5",
-        "guzzlehttp/guzzle": "^7.4",
-        "laravel/helpers": "^1.5"
+        "guzzlehttp/guzzle": "*",
+        "laravel/helpers": "*"
     }
 }
